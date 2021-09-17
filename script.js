@@ -19,12 +19,12 @@ hamburgerButton.addEventListener('click', () => {
 
 imageIndexes.forEach(i => {
  const image = document.createElement('img');
- image.src = `/imagestwo/image${i}.jpg`;
+ image.src = `./imagestwo/image${i}.jpg`;
  image.classList.add('galleryImg');
 
  image.addEventListener('click', () => {
   popup.style.transform = `translateY(0)`;
-  selectedImage.src = `/imagestwo/image${i}.jpg`;
+  selectedImage.src = `./imagestwo/image${i}.jpg`;
  })
 
  gallery.appendChild(image);
