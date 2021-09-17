@@ -1,0 +1,585 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body{
+  background-color: rgb(48, 46, 46);
+      font-family: 'Montserrat', sans-serif;
+}
+
+
+
+/* Hamburger Button Container */
+
+.ham-hidden{
+ display: none;
+}
+
+.hamburger-button {
+ width: 45px;
+ height: 25px;
+ background-color: none;
+
+ flex-direction: column;
+ 
+ position: absolute;
+ top: 0;
+ left: 5px;
+ margin: 3rem;
+
+ 
+}
+
+/* HAMBURGER BAR */
+
+ .bar{
+  height: 4px;
+  background-color: black;
+  width: 100%;
+  display: block;
+  border-radius: 20px;
+  
+  
+ }
+
+
+ /* NAVBAR */
+ .navbar {
+  
+  width: 100%;
+  height: 100px;
+  background-color: rgb(221, 221, 221);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 3px 12px 5px rgba(71, 70, 73, 0.2);
+  z-index: 2;
+
+ }
+
+ .navbar img{
+   position: relative;
+   bottom: 190px;
+ }
+ 
+ 
+
+/* HAMBURGER BARS */
+ .bar::after{
+  content:'';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  top: 20px;
+  background: inherit;
+  border-radius: 20px;
+  
+ }
+
+ .bar::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  top: -20px;
+  background: inherit;
+   border-radius: 20px;
+ }
+
+
+ /* MENU */
+
+
+ 
+ .menu-hidden{
+  display: none;
+ }
+ 
+
+.menu-title{
+
+ background-color: rgb(46, 45, 45);
+ width: 400px;
+ height: 200px;
+text-align: center;
+padding-top: 1rem;
+animation: OpacityIn;
+animation-duration: 3s;
+animation-iteration-count: initial;
+font-size: 2rem;
+
+}
+
+.menu-title h1 {
+color: white;
+}
+
+ .menu {
+   position: absolute;
+  height: 100vh;
+  width: 500px;
+  background-color: rgb(240, 237, 237);
+  animation: OpacityIn;
+animation-duration: 3s;
+animation-iteration-count: initial;
+z-index: 1;
+
+ }
+
+ .menu ul li {
+  padding: 2rem 1rem 1rem 2rem;
+  text-align: left;
+  position: relative;
+  font-size: 1.5rem;
+  list-style-type: none;
+  color: rgb(121, 118, 118);
+  z-index: 1;
+  border-bottom: 2px solid rgba(77, 175, 255, 0.3);
+  width: 400px;
+   
+  
+
+ 
+ }
+
+ .menu ul li a {
+   text-decoration: none;
+   color: black;
+ }
+
+
+ .menu ul li:hover {
+
+   animation: MyGlowAnimation;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+ }
+
+ .menu ul li:hover::after {
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: 200px;
+  width: 40px;
+  height: 20px;
+  background-color: rgb(123, 182, 250);
+  animation: MyAnimation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  
+ }
+
+
+ .menu-title a {
+  text-decoration: none;
+  color: black;
+  
+ }
+
+ /* SOCIAL MEDIA NAVBAR */
+
+
+
+
+ /* Image Gallery */
+
+.special-image{
+  max-height: 950px;
+}
+  /* margin-left: 10rem; */
+
+
+
+/* TOURS */
+
+
+
+.video-section {
+
+
+
+
+}
+
+.song-title {
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  margin: 2rem 0;
+  font-weight: bold;
+}
+
+.iframe-container{
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; 
+  height: 0;
+  margin-bottom: 3rem;
+  
+}
+.iframe-container iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  
+}
+
+/* RELEASES SECTION */
+
+.releases-section {
+
+  padding-top: 2;
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   grid-gap: 1rem;
+  justify-items: center;
+  align-items: center;
+
+   background-color: white;
+   height: 50vh;
+  
+
+   
+}
+
+.releases-item {
+  display: flex;
+  flex-direction: column;
+  margin-top: 7rem;
+  
+
+}
+
+.releases-item button {
+  width: 250px;
+  font-size: 1.5rem;
+  border: none;
+  background-color: black;
+  border-radius: 5px;
+  padding: 1rem 0;
+  font-weight: bold;
+  
+  margin: 5px auto;
+}
+
+.releases-item button a {
+  text-decoration: none;
+  color: white;
+ 
+}
+
+.releases-item .spotify-button {
+  color: rgb(72, 224, 72);
+}
+
+.releases-item .apple-button {
+  color: rgb(252, 54, 87);
+}
+
+.releases-item h4 {
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  
+  
+}
+
+.releases-item img {
+  margin-bottom: 2rem;
+}
+
+
+.releases-title {
+text-align: center;
+background-color: white;
+padding: 1rem 0 1rem;
+margin: 0;
+font-family: 'Montserrat Subrayada', sans-serif;
+}
+
+/* VIDEOS */
+
+/* .video-section {
+height: 50vh;
+background-color: rgb(44, 44, 44);
+
+} */
+
+.video-section-title {
+  font-family: 'Montserrat Subrayada', sans-serif;
+  color: white;
+  text-align: center;
+  padding-top: 2rem;
+  margin-top: 8rem;
+  padding-bottom: 2rem;
+}
+
+
+
+.video-container {
+display: grid;
+grid-template-columns: repeat(2,1fr);
+justify-items: center;
+align-content: center;
+height: 50vh;
+grid-gap: 1rem;
+
+
+}
+
+.iframe-wrapper h1 {
+text-align: center;
+color: white;
+}
+
+
+/* .iframe-wrapper{
+
+} */
+
+
+/* BOTTOM NAVBAR */
+
+.social-links-navbar{
+  background-color: black;
+  height: 20vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: CENTER;
+  padding: 1rem;
+  color: white;
+  
+
+}
+
+
+.social-links-navbar i:hover {
+  animation: socialAnimation;
+  animation-iteration-count: infinite;
+  animation-duration: .2s;
+}
+
+
+ /* ANIMATIONS */
+
+
+ @keyframes MyAnimation {  
+ 0%{
+  transform:translateX(0px)
+ }
+
+ 50%{
+  transform: translateX(50px);
+ }
+
+ 100%{
+  transform: translateX(-30px);
+ }
+
+
+}
+
+@keyframes MyGlowAnimation {
+
+ 0%{
+  text-shadow: 0px 0px 0px 0px;
+ }
+
+ 100%{
+  text-shadow: 0px -8px 3px rgb(146, 146, 255);
+ }
+}
+
+
+@keyframes OpacityIn {
+
+ from{
+  opacity: 0;
+ }
+
+ to{
+  opacity: 1;
+ }
+}
+
+
+@keyframes socialAnimation {
+
+  0%{
+    text-shadow: 0 0 0 rgb(25, 116, 221);
+  }
+
+100%{
+  text-shadow: 0px -5px 5px rgb(83, 161, 250);;
+}
+}
+
+
+
+/* MEDIA QUERIES */
+
+/* TABLET AND BELOW */
+
+@media(max-width:1287px){
+
+
+  /* RELEASES SECTION  */
+.releases-section {
+
+  padding-top: 2;
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   grid-gap: 1rem;
+  justify-items: center;
+
+   background-color: white;
+   height: 100vh;
+
+   
+}
+
+/* PURCHASE BUTTON */
+.purchase-ticket-button{
+ margin: 3rem auto;
+  background-color: rgb(11, 125, 218);
+  display: block;
+  width: 500px;
+  border:none;
+  padding: 1rem;
+  border-radius: 20px;
+  
+  transition: .2s ease-in ;
+}
+
+/* TOUR ITEM */
+.tour-list-container {
+  width: 100%;
+  justify-content: space-between;
+  
+}
+
+/* VIDEOS */
+
+
+/* SOCIAL NAVBAR */
+
+.social-links-navbar {
+  margin-top: 10rem;
+}
+
+
+
+}
+
+
+
+
+
+/* PHONE */
+
+@media(max-width:836px) {
+
+.tour-list-container {
+  width: 80%;
+}
+
+.tour-item img {
+padding-right: 15px;
+}
+
+.tour-item p {
+padding-right: 15px;
+}
+
+.tour-item {
+  font-size: 10px;
+  
+}
+.tour-item-details {
+font-size: 10px;
+}
+
+  .menu{
+width: 200px;
+  }
+
+.menu-title{
+  width: 200px;
+}
+
+.menu ul li {
+  width: 20px;
+}
+
+  .navbar{
+    width: 100%;
+  }
+
+  .navbar img {
+  width: 250px;
+bottom: 30px;
+left: 90px;
+
+  
+  }
+
+  .purchase-ticket-button{
+    width: 300px;
+  }
+
+ 
+
+.releases-section {
+
+  padding-top: 2;
+   display: grid;
+   grid-template-columns: repeat(1,1fr);
+   grid-gap: 1rem;
+  justify-items: center;
+
+   background-color: white;
+   height: 100%;
+  
+  
+
+   
+}
+
+.releases-item{
+  margin-top: 0rem;
+  /* overflow: hidden; */
+}
+
+.releases-item img {
+  height: 190px;
+}
+
+.video-container {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.video-tube {
+ width: 300px;
+ height: 200px;
+}
+
+.iframe-wrapper h1 {
+text-align: center;
+color: white;
+}
+
+.i-frame-wrapper {
+  width: 50%;
+}
+
+.social-links-navbar{
+  display: flex;
+  align-items: center;
+}
+
+} 
