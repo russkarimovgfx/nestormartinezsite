@@ -651,6 +651,11 @@ font-family: 'Montserrat Subrayada', sans-serif;
   padding: 2rem 0;
 }
 
+.video-container-two video {
+  margin: 2rem 0;
+  border-radius: 30px;
+}
+
 video {
   border-radius: 15px;
 }
