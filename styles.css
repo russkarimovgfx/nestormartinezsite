@@ -63,6 +63,14 @@ body{
    position: relative;
    bottom: 190px;
  }
+
+ #logo-two {
+   position: relative;
+   top: 100px;
+   height: 170px;
+
+ }
+ 
  
  
 
@@ -233,7 +241,7 @@ z-index: 1;
 
 .releases-section {
 
-  padding-top: 2;
+  padding-top: 5rem;
    display: grid;
    grid-template-columns: repeat(3,1fr);
    grid-gap: 1rem;
@@ -242,7 +250,7 @@ z-index: 1;
 
    background-color: white;
    height: 50vh;
-  
+  padding-bottom: 5rem;
 
    
 }

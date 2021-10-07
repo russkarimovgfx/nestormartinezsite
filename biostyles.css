@@ -424,10 +424,10 @@ right: 0;
 /* VIDEOS PAGE STYLES */
 
 
-.music-background-image {
- background: url(images/croppedtwo.jpg);
+.video-background-image {
+ background: url(./images/IMG_0833.JPG);
 
-height: 300px;
+height: 500px;
 background-position: center;
 
 background-size: cover;
@@ -466,6 +466,17 @@ border-bottom: 5px dotted white;
 }
 
 /* MUSIC PAGE STYLES */
+
+.music-background-image {
+ background: url(./images/musicbackground.jpg);
+
+height: 500px;
+background-position: center;
+
+background-size: cover;
+border-bottom: 5px dotted white;
+
+}
 
 .music-title-two {
   color:rgb(255, 255, 255);
@@ -633,6 +644,18 @@ font-family: 'Montserrat Subrayada', sans-serif;
 
 /* PRINT COMMERCIAL WORK */
 
+.print-background-image {
+ background: url(./images/Nestor\ Test\ 7-20180058.jpg);
+
+height: 500px;
+background-position: center;
+
+background-size: cover;
+border-bottom: 5px dotted white;
+z-index: 0;
+
+}
+
 .print-title {
   color: white;
   text-align: center;
@@ -660,7 +683,7 @@ video {
   border-radius: 15px;
 }
 
-.print-gallery {
+ /* .print-gallery {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -680,7 +703,7 @@ video {
   width: 300px;
   margin: 1rem 0;
  
-}
+} */
 
 .print-gallery-two {
  display: flex;
@@ -699,9 +722,100 @@ video {
 .print-gallery-two img {
   margin-bottom: 1rem;
   border-radius: 5px;
+} 
+
+.print-container {
+  max-width: 1200px;
+  padding: 50px 50px;
+  padding-left: 50px;
+  margin-left: auto;
 }
 
+.printGalleryImg {
+  max-width: 100%;
+  border-radius:  10px;
+  position: relative;
+  transition: transform 250ms;
+  cursor: pointer;
+  
+}
 
+.printGalleryImg:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 3px 10px white;
+}
+
+#print-gallery {
+  display: grid;
+  grid-template-columns: repeat(1fr);
+  grid-row-gap: 20px;
+}
+
+#popup-two {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-100%);
+  transition: 250ms transform;
+  padding: 50px;
+
+}
+
+#selected-image-two {
+  max-height: 100%;
+}
+
+/* 2nd gallery */
+
+.amazing-container {
+  max-width: 1600px;
+  padding: 50px 20px;
+  margin:  0 auto;
+}
+
+#amazing-gallery {
+ display: grid;
+  grid-template-columns: repeat(1fr);
+  grid-row-gap: 20px;
+}
+
+.galleryImgTwo {
+  max-width: 100%;
+  border-radius: 10px;
+  position: relative;
+  transition: transform 250ms;
+  cursor: pointer;
+}
+
+.galleryImgTwo:hover {
+  transform: translateY(-2px);
+   box-shadow: 0px 3px 10px white;
+}
+
+#popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+    background-color: rgba(0,0,0,0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-100%);
+  transition: 250ms transform;
+  padding: 50px;
+}
+
+#selectedImage {
+  max-height: 100%;
+}
 /* MEDIA */
 
 
